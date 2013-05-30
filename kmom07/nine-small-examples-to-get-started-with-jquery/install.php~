@@ -1,0 +1,55 @@
+<?php
+/**
+ * 
+ */
+include("config.php");
+
+// Get small bits and pieces from various views.
+
+
+// Create the data array which is to be used in the template file.
+$data['title'] = "install";
+$data['meta_description'] = "imageview";
+$data['main'] = <<<EOD
+
+
+<div class="text">
+
+<h1>Installera</h1>
+
+
+<div class="text">
+<p>Du kan enkelt ladda ner och använda dig av Imageview genom följande steg:</p>
+</div>
+<div>
+<div><h3>1. Ladda ner senaste versionen av jQuary och lägg i samma mapp som ditt projekt. Det kan du göra på följande länk:</h3>
+<p><a href="http://jquery.com/download/">Ladda ner jQuery</a></p>
+</div>
+
+<div><h3>2. Ladda ner min js-fil och lägg i samma mapp som ditt projekt:</h3>
+<p><a href="main.js">ImageView</a>
+</div>
+<div><h3>3. Lägg följande taggar i ditt projekt:</h3>
+<p><pre>< script src="main.js"></script></pre></p>
+<p><pre>< script src="jquery.js"></script></pre></p>
+</div>
+<div><h3>4. Omslutna av en wrapper lägger du sedan in länkarna till dina bilder  Exempelvis;</h3>
+<pre>< img class='example lightbox' src='img/exempel.jpg' alt='' width='200px' /></pre>
+</p>
+</div>
+</div>
+<br />
+
+</div>
+
+</div>
+
+
+
+
+
+
+EOD;
+
+// Hand over to the template engine.
+include(__DIR__."/theme/template.php"); 

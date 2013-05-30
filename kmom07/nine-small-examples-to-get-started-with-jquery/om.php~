@@ -1,0 +1,27 @@
+<?php
+/**
+ * 
+ */
+include("config.php");
+
+ 
+
+
+// Create the data array which is to be used in the template file.
+$data['title'] = "om";
+$data['meta_description'] = "imageview";
+$data['main'] = <<<EOD
+
+
+<div class="text">
+<h1>Om</h1>
+
+
+</div>
+  
+
+
+EOD;
+
+// Hand over to the template engine.
+include(__DIR__."/theme/template.php"); 

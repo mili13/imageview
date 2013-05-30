@@ -1,0 +1,27 @@
+<?php
+/**
+ * General settings, valid for all page requests
+ */
+ 
+// Error reporting
+error_reporting(-1);
+
+// Change this to __DIR__ whenever PHP5.3 is supported on production environment
+if(!defined('__DIR__')) {
+  define('__DIR__', dirname(__FILE__));
+}
+
+// The contents of the kmoms navlinks
+$data['navkmom'] = array(
+  ''   => array('text'=>'',  'url'=>true),
+  ''   => array('text'=>'',  'url'=>false),
+);
+
+// The contents of the navbar
+$data['navbar'] = array(
+  'index'         => array('text'=>'hem',  'url'=>'index.php'),
+  'om'   => array('text'=>'om',  'url'=>'om.php'),
+  'install'   => array('text'=>'installera',  'url'=>'install.php'),
+  'konkurrenter'   => array('text'=>'konkurrenter',  'url'=>'konkurrenter.php'),
+
+);
